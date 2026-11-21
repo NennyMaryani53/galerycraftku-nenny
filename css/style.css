@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --pink: #D6A5A0;
+    --pink-dark: #BD8983;
+    --primary-color: #687565;
+    --background-color: #F8F7F3;
+    --text-color: #55483F;
+    --secondary-text: #827970;
+    --white: #FFFFFF;
+    --border-color: #E8E5DC;
+    --box-shadow: 0 12px 35px rgba(85,72,63,.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.65;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+/* Header */
+.nenny_container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+.nenny_header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(248, 247, 243, .96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nenny_nav {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.nenny_brand {
+    font: 700 1.45rem 'Playfair Display', serif;
+    color: var(--primary-color);   
+}
+
+.nenny_brand span {
+    color: var(--text-color);
+}
+
+.nenny_links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nenny_links a {
+    font-size: .92rem;
+    color: var(--secondary-text);
+    font-weight: 600;
+}
+
+.nenny_links a:hover, .nenny_links a.nenny_active {
+    color: var(--primary-color);
+}
+
+.nenny_toggle {
+    display: none;
+    border: 0;
+    background: #E8E5DC;
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+/* Hero */
+.nenny_hero {
+    padding: 66px 0 58px;
+}
+
+.nenny_hero-grid {
+    display: grid;
+    grid-template-columns: 1.02fr .98fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.nenny_eyebrow {
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.nenny_hero p, .nenny_lead {
+    color: var(--secondary-text);
+    font-size: 18px;
+    max-width: 570px;
+}
+
+.nenny_hero-image {
+    height: 490px;
+    border-radius: 48% 48% 18px 18px;
+    box-shadow: var(--box-shadow);
+}
+
+.nenny_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 999px;
+    padding: 13px 23px;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nenny_btn:hover {
+    background: #53604F;
+    transform: translateY(-4px);
+}
+
+.nenny_btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.nenny_btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.nenny_actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+/* Section */
+.nenny_section {
+    padding: 58px 0;
+}
+
+.nenny_section-soft {
+    background: #E8E5DC;
+}
+
+.nenny_section-heading {
+    text-align: center;
+    margin: 0 auto 32px;
+    max-width: 650px;
+}
+
+.nenny_section-heading h2, .nenny_content h2 {
+    font: 600 clamp(1.8rem, 3vw, 2.6rem) 'Playfair Display', serif;
+    margin: 8px 0;
+}
+
+.nenny_section-heading p {
+    color: var(--secondary-text);
+}
+
+.nenny_cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.nenny_product-card, .info-card, .nenny_card-review, .nenny_faq-item {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.nenny_product-card img {
+    height: 245px;
+    width: 100%;
+}
+
+.nenny_product-info {
+    padding: 18px;
+}
+
+.nenny_product-info h3 {
+    font: 600 1.2rem 'Playfair Display', serif;
+}
+
+.nenny_product-info p {
+    color: var(--secondary-text);
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+.nenny_price {
+    color: #BD8983;
+    font-weight: 700;
+}
+
+.nenny_card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.nenny_small-btn {
+    padding: 9px 14px;
+    font-size: 15px;
+}
+
+/* Section soft */
+.nenny_two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 38px;
+    align-items: center;
+}
+
+
+.nenny_rounded-img {
+    width: 100%;
+    height: 410px;
+    border-radius: 22px;
+}
+
+.nenny_content p {
+    color: var(--secondary-text);
+}
+
+/* Kategori */
+.nenny_hero-page {
+    padding: 58px 0 34px;
+    text-align: center;
+    background: linear-gradient(135deg, #E8E5DC, #F8F7F3);
+}
+
+.nenny_title {
+    font-size: clamp(24px, 4vw, 40px);
+    font-family: 'Playfair Display', serif;
+    margin: 8px 0;
+}
+
+.nenny_hero-page p {
+    color: var(--secondary-text);
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.nenny_filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 0 28px;
+}
+
+.nenny_filter-btn {
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--secondary-text);
+    border-radius: 99px;
+    padding: 9px 17px;
+    cursor: pointer;
+}
+
+.nenny_filter-btn.nenny_active, .nenny_filter-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Form */
+.nenny_form {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    background: white;
+    padding: 40px;
+    border-radius: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.nenny_form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.nenny_field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+.nenny_field label {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.nenny_field input, .nenny_field select, .nenny_field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 11px;
+    background: #fffdfc;
+    color: var(--text-color);
+    outline-color: var(--pink-dark);
+}
+
+.nenny_field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.nenny_full {
+    grid-column: 1/-1;
+}
+
+.nenny_estimasi {
+    background: #F0EDE5;
+    border-radius: 14px;
+    padding: 17px;
+    margin: 12px 0 20px;
+}
+
+.nenny_estimasi strong {
+    font: 600 24px 'Playfair Display', serif;
+    color: var(--primary-color);
+}
+
+/* Galeri */
+.nenny_galery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.nenny_galery-grid img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.nenny_galery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* Tentang */
+.nenny_check-list {
+    padding-left: 20px;
+}
+
+.nenny_text-center {
+    text-align: center;
+}
+
+/* Testimoni dan FAQ */
+.nenny_card-review {
+    padding: 23px;
+}
+
+.nenny_stars {
+    color: #D6A5A0;
+    letter-spacing: 3px;
+}
+
+.nenny_card-review p {
+    color: var(--secondary-text);
+}
+
+.nenny_faq-list {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    gap: 12px;
+}
+
+.nenny_faq-item {
+    padding: 0 20px;
+}
+
+.nenny_faq-question {
+    width: 100%;
+    border: 0;
+    background: white;
+    padding: 18px 0;
+    text-align: left;
+    font-weight: 700;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nenny_faq-answer {
+    display: none;
+    color: var(--secondary-text);
+    padding: 0 0 18px;
+}
+
+.nenny_faq-item.nenny_open .nenny_faq-answer {
+    display: block;
+}
+
+/* Kontak */
+.nenny_contact-box {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 25px;
+}
+
+/* Footer */
+.nenny_footer {
+    background: #55483F;
+    color: #F8F7F3;
+    padding: 42px 0 20px;
+    margin-top: 15px;
+}
+
+.nenny_footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap:30px;
+}
+
+.nenny_footer p, .nenny_footer a {
+    color: #E8E5DC;
+}
+
+.nenny_footer h3 {
+    font: 600 1.25rem 'Playfair Display', serif;
+}
+
+.nenny_copyright {
+    border-top: 1px solid #827970;
+    margin-top: 25px;
+    padding-top: 16px;
+    text-align: center;
+    color: #E8E5DC;
+    font-size: 14px;
+}
+
+/* Tampilan tablet dan ponsel */
+@media(max-width: 800px) {
+    .nenny_nav {
+        min-height: 68px;
+    }
+
+    .nenny_toggle {
+        display: block;
+    }
+
+    .nenny_links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background-color: var(--background-color);
+        padding: 18px 4%;
+        border-bottom: 1px solid var(--border-color);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .nenny_links.active {
+        display: flex;
+    }
+
+    .nenny_hero-grid,.nenny_two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .nenny_hero {
+        padding-top: 38px;
+    }
+
+    .nenny_hero-image {
+        height: 350px;
+    }
+
+    .nenny_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nenny_footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nenny_footer-grid > div:first-child{
+        grid-column: 1/-1;
+    }
+
+    .nenny_galery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 540px) {
+    .nenny_cards, .nenny_footer-grid, .nenny_form-grid, .nenny_galery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nenny_footer-grid>div:first-child {
+        grid-column: auto;
+    }
+
+    .nenny_product-card img {
+        height: 230px;
+    }
+
+    .nenny_section {
+        padding: 42px 0;
+    }
+
+    .nenny_hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .nenny_rounded-img {
+        height: 300px;
+    }
+
+    .nenny_form {
+        padding: 19px;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery Craftku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="nenny_header">
+        <div class="nenny_container nenny_nav">
+            <a class="nenny_brand" href="index.html">Galery <span>Craftku.</span></a>
+            <button class="nenny_toggle">☰</button>
+
+            <nav class="nenny_links">
+                <a href="index.html">Beranda</a>
+                <a href="katalog.html">Katalog</a>
+                <a class="nenny_active" href="custom.html">Costum</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="testimoni.html">Testimoni &amp; FAQ</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian konten halaman -->
+        <section class="nenny_hero-page">
+            <div class="nenny_container">
+                <span class="nenny_eyebrow">Ciptakan yang personal</span>
+                <h1 class="nenny_title">Custom Your Bouquet</h1>
+                <p>Rancang buket sesuai selera dan momen spesialmu. Pilih detailnya, lalu lihat estimasi harga.</p>
+            </div>
+        </section>
+
+        <section class="nenny_section">
+            <div class="nenny_container">
+                <form class="nenny_form" id="nenny_order-form">
+                    <div class="nenny_form-grid">
+
+                        <!-- Jenis bunga -->
+                        <div class="nenny_field">
+                            <label for="nenny_flower">Jenis Bunga</label>
+                            <select name="flower" id="nenny_flower">
+                                <option value="80000">Mawar (Rp. 80.000)</option>
+                                <option value="70000">Baby's breath (Rp70.000)</option>
+                                <option value="90000">Tulip (Rp90.000)</option>
+                                <option value="65000">Bunga campuran (Rp65.000)</option>
+                            </select>
+                        </div>
+
+                        <!-- Ukuran buket -->
+                        <div class="nenny_field">
+                            <label for="nenny_size">Ukuran Buket</label>
+                            <select name="size" id="nenny_size">
+                                <option value="25000">Small (+25.000)</option>
+                                <option value="50000">Medium (+50.000)</option>
+                                <option value="85000">Large (+85.000)</option>
+                            </select>
+                        </div>
+
+                        <!-- Warna wrapping -->
+                        <div class="nenny_field">
+                            <label for="nenny_wrapping">Warna wrapping</label>
+                            <select name="wrapping" id="nenny_wrapping">
+                                <option value="15000">Pink Pastel (+15.000)</option>
+                                <option value="15000">Cream (+15.000)</option>
+                                <option value="20000">Korean style (+20.000)</option>
+                            </select>
+                        </div>
+
+                        <!-- Pilihan buket -->
+                        <div class="nenny_field">
+                            <label for="nenny_product">Pilihan Buket</label>
+                            <select name="product" id="nenny_product">
+                                <option>Custom Buket Bunga</option>
+                                <option>Custom Buket Wisuda</option>
+                                <option>Custom Buket Ulang Tahun</option>
+                            </select>
+                        </div>
+
+                        <!-- Detail request -->
+                        <div class="nenny_field nenny_full">
+                            <label for="nenny_message">Kartu ucapan / detail request</label>
+                            <textarea name="message" id="nenny_message" placeholder="Tuliskan warna, ucapan, atau detail khusus..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="nenny_estimasi">Estimasi harga mulai dari <br>
+                        <strong id="nenny_estimasi-price">155.000</strong>
+                        <p class="nenny_notice">Harga dapat berubah sesuai ketersediaan bunga dan detail pesanan.</p>
+                    </div>
+                    
+                    <button class="nenny_btn" type="submit">Lanjut Pesan via Email</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="nenny_footer">
+        <div class="nenny_container">
+            <div class="nenny_footer-grid">
+                <div>
+                    <h3>Galery Craftku</h3>
+                    <p>Merangkai bunga dan hadiah kecil menjadi kenangan yang istimewa. Dibuat dengan hati untuk setiap momen berharga. </p>
+                </div>
+                <div>
+                    <h3>Menu</h3>
+                    <p>
+                        <a href="katalog.html">Katalog Produk</a> <br>
+                        <a href="custom.html">Custom Buket</a> <br>
+                        <a href="galeri.html">Galeri</a> <br>
+                    </p>
+                </div>
+                <div>
+                    <h3>Hubungi Kami</h3>
+                    <p>
+                        <a>WhatsApp: 0889-0141-5505</a> <br>
+                        <a>Instagram: @galerycraftku</a> <br>
+                    </p>
+                </div>
+            </div>
+            <div class="nenny_copyright">
+                &copy; 2026 Galery Craftku. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

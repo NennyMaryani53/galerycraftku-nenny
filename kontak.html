@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery Craftku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="nenny_header">
+        <div class="nenny_container nenny_nav">
+            <a class="nenny_brand" href="index.html">Galery <span>Craftku.</span></a>
+            <button class="nenny_toggle">☰</button>
+
+            <nav class="nenny_links">
+                <a href="index.html">Beranda</a>
+                <a href="katalog.html">Katalog</a>
+                <a href="custom.html">Costum</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="testimoni.html">Testimoni &amp; FAQ</a>
+                <a class="nenny_active" href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian konten halaman -->
+        <section class="nenny_hero-page">
+            <div class="nenny_container">
+                <span class="nenny_eyebrow">We'd love to hear from you</span>
+                <h1 class="nenny_title">Hubungi Kami</h1>
+                <p>Punya ide buket atau ingin memesan hadiah? Ceritakan kebutuhanmu kepada kami.</p>
+            </div>
+        </section>
+
+        <section class="nenny_section">
+            <div class="nenny_container nenny_two-col">
+                <form class="nenny_form" id="nenny_form-order">
+                    <div class="nenny_field">
+                        <label for="nenny_name">Nama Lengkap</label>
+                        <input id="nenny_name" name="nama" placeholder="Nama kamu" required>
+                    </div>
+
+                    <div class="nenny_field">
+                        <label for="nenny_contact">Nomor WhatsApp / Email</label>
+                        <input id="nenny_contact" name="contact" placeholder="08xx atau email" required>
+                    </div>
+
+                    <div class="nenny_field">
+                        <label for="nenny_produk">Pilihan Buket</label>
+                        <select name="produk" id="nenny_produk">
+                            <option>Buket Mawar</option>
+                            <option>Buket Wisuda</option>
+                            <option>Buket Uang</option>
+                            <option>Buket Snack</option>
+                            <option>Custom Buket</option>
+                        </select>
+                    </div>
+
+                    <div class="nenny_field">
+                        <label for="nenny_message">Pesan / alamat pengiriman</label>
+                        <textarea name="message" id="nenny_message" placeholder="Tuliskan detail pesanan dan alamat..." required></textarea>
+                    </div>
+
+                    <button class="nenny_btn" type="submit">Kirim Pesan via Email</button>
+                </form>
+
+                <div class="nenny_content">
+                    <span class="nenny_eyebrow">Contact details</span>
+                    <h2>Kami siap membantu.</h2>
+                    <p>Hubungi Galeri Craftku untuk bertanya tentang produk, ketersediaan, custom buket, dan pengiriman.</p>
+                    <div class="nenny_contact-box">
+                        <h3>WhatsApp</h3>
+                        <p>0889-0141-5505</p>
+                        <h3>Instagram</h3>
+                        <p>@galerycraftku</p>
+                        <h3>Alamat</h3>
+                        <p>Dsn. Mekarjaya, Desa Paledah, Kecamatan Padaherang</p>
+                        <h3>Jam Operasional</h3>
+                        <p>Senin&ndash;Sabtu, 09.00&ndash;21.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="nenny_footer">
+        <div class="nenny_container">
+            <div class="nenny_footer-grid">
+                <div>
+                    <h3>Galery Craftku</h3>
+                    <p>Merangkai bunga dan hadiah kecil menjadi kenangan yang istimewa. Dibuat dengan hati untuk setiap momen berharga. </p>
+                </div>
+                <div>
+                    <h3>Menu</h3>
+                    <p>
+                        <a href="katalog.html">Katalog Produk</a> <br>
+                        <a href="custom.html">Custom Buket</a> <br>
+                        <a href="galeri.html">Galeri</a> <br>
+                    </p>
+                </div>
+                <div>
+                    <h3>Hubungi Kami</h3>
+                    <p>
+                        <a>WhatsApp: 0889-0141-5505</a> <br>
+                        <a>Instagram: @galerycraftku</a> <br>
+                    </p>
+                </div>
+            </div>
+            <div class="nenny_copyright">
+                &copy; 2026 Galery Craftku. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
